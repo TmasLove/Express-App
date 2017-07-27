@@ -23,7 +23,11 @@ const myUserSchema = new Schema(
      encryptedPassword: {
        type: String,
        required: true
-     }
+     },
+     cartItems: [{
+       type: Schema.Types.ObjectId,
+       ref: 'Bottle'
+     }]
    },
     {
       timestamps: true

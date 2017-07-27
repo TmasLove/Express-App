@@ -45,7 +45,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({
   credentials: true,                   // allow other domains to send cookies
-  origin: 'http://localhost:4200' // these are the domains that are allowed
+  origin: ['http://localhost:4200'] // these are the domains that are allowed
 }));
 
 //ROUTES GO HERE ----------------------------------------------------------
@@ -58,7 +58,7 @@ app.use('/api/liquor', liquor);
 
 const auth = require('./routes/auth-routes.js');
 app.use('/api', auth);
-// 
+//
 // const transactions = require('./routes/transactions-model.js');
 // app.use('/api', transactions);
 
