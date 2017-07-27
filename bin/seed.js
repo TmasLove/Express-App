@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/dond');
+mongoose.connect(process.env.MONGODB_URI);
 
 const Bottle = require('../models/bottle-model.js');
 
