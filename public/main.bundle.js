@@ -968,7 +968,7 @@ var AuthService = (function () {
     // an argument for each 'req.body' in the API route
     AuthService.prototype.signup = function (theFullName, theEmail, theAddress, theUsername, thePassword) {
         return this.httpThing
-            .post(__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].apiBase + '/api/signup', 
+            .post(__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].apiBase + '/api/signup',
         // form body information to send to backend (req.body)
         {
             signupFullName: theFullName,
@@ -1007,7 +1007,7 @@ var AuthService = (function () {
     // GET checklogin
     AuthService.prototype.checkLogin = function () {
         return this.httpThing
-            .get(__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].apiBase + '/api/checklogin', 
+            .get(__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].apiBase + '/api/checklogin',
         // Send the cookies across domains
         { withCredentials: true })
             .toPromise()
@@ -1149,7 +1149,7 @@ module.exports = __webpack_require__.p + "white.c21591b78e29fe1299e0.png";
 // The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false,
-    apiBase: 'http://localhost:3000'
+    apiBase: 'http://drinksondemand.co'
 };
 //# sourceMappingURL=environment.js.map
 
