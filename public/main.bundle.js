@@ -1149,7 +1149,7 @@ module.exports = __webpack_require__.p + "white.c21591b78e29fe1299e0.png";
 // The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false,
-    apiBase: 'http://drinksondemand.co'
+    apiBase: 'http://www.drinksondemand.co'
 };
 //# sourceMappingURL=environment.js.map
 
