@@ -17,7 +17,7 @@ require('dotenv').config();
 require('./config/passport-config');
 
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.createConnection(process.env.MONGODB_URI);
 
 const app = express();
 

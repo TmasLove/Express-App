@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/display-cart', (req, res, next) => {
   const userId = req.user._id;
   if(!req.user) {
-    console.log("get da fuck outta here ");
+    console.log("get da f outta here ");
     return;
   }
   UserModel.findById(userId)
@@ -28,7 +28,7 @@ router.get('/display-cart', (req, res, next) => {
 router.post('/save-cart', (req, res, next) => {
     const userId = req.user._id;
     if(!req.user) {
-      console.log("get da fuck outta here ");
+      console.log("get da f outta here ");
       return;
     }
 
